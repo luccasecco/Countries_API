@@ -10,4 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     background: ${props => props.theme['dark']}
   }
 
+  body, input, textarea, button{
+    font-family: 'Poppins', sans-serif;
+  }
+
   `
