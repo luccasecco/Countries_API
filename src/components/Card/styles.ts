@@ -22,6 +22,15 @@ export const CardContainer = styled.div`
       color: ${props => props.theme.title}
     }
 
+    a {
+      text-decoration: none;
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(1.3)
+      }
+    }
+
     .card-content{
       max-width: 80%;
       margin-top: 2rem;
