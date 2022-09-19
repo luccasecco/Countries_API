@@ -2,6 +2,7 @@ import { MagnifyingGlass } from 'phosphor-react'
 import { useEffect, useState } from "react"
 
 import { Card } from "../../components/Card"
+import { Loading } from '../../components/Loader'
 import { ICountriesProps } from "../../interfaces"
 import { api } from '../../services/api'
 
@@ -12,8 +13,25 @@ export function Home() {
   const [countrySearch, setCountrySearch] = useState<ICountriesProps[]>([])
   const [countrySearchByRegion, setCountrySearchByRegion] = useState<ICountriesProps[]>([])
 
+  const [isLoading, setIsLoading] = useState(true)
+
   useEffect(() => {
-    api.get('/all').then(response => setCountries(response.data))
+    const getContries = async () => {
+      try {
+        const res = await api.get('/all')
+
+        if (!res) throw new Error("Could not found!");
+
+        const data = await res.data
+        setCountries(data)
+        setIsLoading(false);
+      } catch (error) {
+        setIsLoading(false);
+        console.error(error)
+      }
+    }
+
+    getContries()
   }, [countries, countrySearch])
 
   function handleSearchCountryByName(event: any) {
@@ -65,6 +83,7 @@ export function Home() {
         </select>
       </div>
       <Container>
+        {isLoading && <Loading />}
         {countrySearch.length === 0 && countrySearchByRegion.length === 0 ? countries.map((country) => {
           return (
             <Card
