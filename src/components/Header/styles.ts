@@ -15,7 +15,7 @@ export const Container = styled.header`
     }
   }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       font-size: 0.7rem;
       text-align: center;
     }
