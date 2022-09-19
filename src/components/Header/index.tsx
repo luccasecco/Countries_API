@@ -15,21 +15,23 @@ export function Header({ toggleTheme }: Props) {
 
   return (
     <Container>
-      <NavLink to="/">
-        <h1>Where in the World?</h1>
-      </NavLink>
+      <div className="content">
+        <NavLink to="/">
+          <h1>Where in the World?</h1>
+        </NavLink>
 
-      <Switch
-        onChange={toggleTheme}
-        checked={title === 'dark'}
-        checkedIcon={false}
-        uncheckedIcon={false}
-        height={10}
-        width={40}
-        handleDiameter={20}
-        offColor="#323232"
-        onColor={colors.secundary}
-      />
+        <Switch
+          onChange={toggleTheme}
+          checked={title === 'dark'}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          height={10}
+          width={40}
+          handleDiameter={20}
+          offColor="#323232"
+          onColor={colors.secundary}
+        />
+      </div>
     </Container>
   )
 }

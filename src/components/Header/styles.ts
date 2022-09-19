@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 2rem 5rem;
-  color: ${props => props.theme.title};
   background: ${props => props.theme.colors.primary};
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75rem;
+    margin: 0 auto;
+    color: ${props => props.theme.title};
+  }
 
   a{
     text-decoration: none;
