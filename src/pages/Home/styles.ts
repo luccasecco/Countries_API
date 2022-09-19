@@ -7,6 +7,11 @@ export const Container = styled.div`
   gap: 5rem;
   max-width: 75rem;
   margin: 4rem auto;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 
 export const Content = styled.div`
@@ -32,6 +37,10 @@ export const Content = styled.div`
       svg {
         color: ${props => props.theme.title}
       }
+
+      @media (max-width: 768px) {
+        width: 20rem;
+      }
    }
 
     input {
@@ -56,8 +65,20 @@ export const Content = styled.div`
       padding: 1rem;
       color: ${props => props.theme.text};
       background: ${props => props.theme["header-dark"]};
+
+      @media (max-width: 1000px) {
+        display: none;
+       }
     }
 
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      padding: 0 2%;
+      justify-content: center;
+      width: 20%;
+      margin: 1rem auto;
+    }
   }
+
 
 `

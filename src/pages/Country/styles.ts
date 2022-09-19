@@ -47,8 +47,13 @@ export const Content = styled.div`
     gap: 2rem;
     margin: 5rem auto;
 
+
     img {
       width: 30rem;
+ 
+      @media (max-width: 1000px) {
+       width: 15rem;
+      }
     }
 
     .text {
@@ -84,10 +89,26 @@ export const Content = styled.div`
             border-radius: 8px;
             background-color: ${props => props.theme["header-dark"]}
           }
-        }
+        } 
         
+      @media (max-width: 1000px) {
+          display: none;
+        }
       }
+      
     }
+
+    @media (max-width: 1000px) {
+        max-width: 90%;
+        padding: 0 2%;
+        justify-content: center;
+      }
   }
+  
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+      }
 `
 

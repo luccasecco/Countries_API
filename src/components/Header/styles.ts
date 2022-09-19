@@ -14,4 +14,9 @@ export const Container = styled.header`
       color: ${props => props.theme.text}; 
     }
   }
+
+    @media (max-width: 768px) {
+      font-size: 0.7rem;
+      text-align: center;
+    }
 `
