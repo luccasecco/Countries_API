@@ -76,7 +76,9 @@ export const Content = styled.div`
         
         p {
           display: flex;
+          gap: 0.5rem;
           align-items: center;
+          max-width: 80%;
 
           span {
             width: 4rem;
