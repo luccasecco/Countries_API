@@ -7,7 +7,7 @@ export function Router() {
   return (
     <Routes>
       <Route path="/" element={<DefaultLayout />}>
-        <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
         <Route path="/country/:name" element={<Country />} />
       </Route>
     </Routes>

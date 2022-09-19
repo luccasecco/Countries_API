@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 export function Card(props: ICountriesProps) {
   return (
     <CardContainer>
-      <NavLink to="/country">
+      <NavLink to={`/country/${props.name.common}`}>
         <img src={props?.flags?.png} alt="" />
         <h1>{props?.name?.common}</h1>
       </NavLink>

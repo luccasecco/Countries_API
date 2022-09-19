@@ -1,9 +1,12 @@
+import { NavLink } from "react-router-dom";
 import { Container } from "./styles";
 
 export function Header() {
   return (
     <Container>
-      <h1>Where in the world?</h1>
+      <NavLink to="/">
+        <h1>Where in the world?</h1>
+      </NavLink>
     </Container>
   )
 }
