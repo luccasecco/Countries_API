@@ -15,7 +15,7 @@ export function Card(props: ICountriesProps) {
         <p><Globe /><strong>Region:</strong> {props.region}</p>
         <p><Buildings /> <strong>Capital:</strong> {props.capital}</p>
         <p><MapTrifold /><strong>Land area:</strong> {props.area} km²</p>
-        <p><HandPalm /><strong>Independet:</strong> {props.independent === true ? "Yes" : "No"}</p>
+        <p><HandPalm /><strong>Independent:</strong> {props.independent === true ? "Yes" : "No"}</p>
       </div>
     </CardContainer>
   )
