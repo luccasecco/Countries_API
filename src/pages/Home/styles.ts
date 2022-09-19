@@ -32,10 +32,10 @@ export const Content = styled.div`
     width: 25rem;
     border-radius: 8px;
     padding: 1rem;
-    background: ${props => props.theme["header-dark"]};
+    background: ${props => props.theme.colors.secundary};
 
       svg {
-        color: ${props => props.theme.title}
+        color: ${props => props.theme.colors.primary}
       }
 
       @media (max-width: 768px) {
@@ -45,12 +45,12 @@ export const Content = styled.div`
 
     input {
       width: 100%;
-      color: ${props => props.theme.title};
+      color: ${props => props.theme.colors.primary};
       background: transparent;
       border: 0;
   
       &::placeholder {
-        color: ${props => props.theme.text};
+        color: ${props => props.theme.colors.primary};
       }
   
       &:focus {
@@ -63,8 +63,8 @@ export const Content = styled.div`
       width: 15rem;
       border-radius: 8px;
       padding: 1rem;
-      color: ${props => props.theme.text};
-      background: ${props => props.theme["header-dark"]};
+      color: ${props => props.theme.colors.primary};
+      background: ${props => props.theme.colors.secundary};
 
       @media (max-width: 1000px) {
         display: none;

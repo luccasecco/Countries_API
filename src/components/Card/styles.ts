@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
   min-height: 28rem;
   border-radius: 8px;
   overflow: hidden;
-  background: ${props => props.theme["header-dark"]};
+  background: ${props => props.theme.colors.primary};
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
     
     img {
@@ -19,7 +19,7 @@ export const CardContainer = styled.div`
       text-align: center;
       margin-top: 1.5rem;
       font-size: 1.25rem;
-      color: ${props => props.theme.title}
+      color: ${props => props.theme.colors.text}
     }
 
     a {
@@ -44,7 +44,7 @@ export const CardContainer = styled.div`
         display: flex;
         align-items: center;
         gap: 0.45rem;
-        color: ${props => props.theme.text}
+        color: ${props => props.theme.colors.text}
       }
     }
   

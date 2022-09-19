@@ -18,13 +18,13 @@ export const Container = styled.main`
 
       border: 0;
       cursor: pointer;
-      color: ${props => props.theme.title};
-      background: ${props => props.theme["header-dark"]};
+      color: ${props => props.theme.colors.text};
+      background: ${props => props.theme.colors.primary};
       box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.6);
       transition: filter 0.2;
 
       &:hover {
-        filter: brightness(1.2)
+        filter: brightness(1.1)
       }
     }
   }
@@ -63,11 +63,11 @@ export const Content = styled.div`
       gap: .5rem;
 
       h1 {
-        color: ${props => props.theme.title}
+        color: ${props => props.theme.colors.text}
       }
 
       p {
-        color: ${props => props.theme.text}
+        color: ${props => props.theme.colors.text}
       }
 
       .border-countries-box {
@@ -87,7 +87,7 @@ export const Content = styled.div`
             margin-left: 0.5rem;
             padding: 0.5rem;
             border-radius: 8px;
-            background-color: ${props => props.theme["header-dark"]}
+            background-color: ${props => props.theme.colors.primary}
           }
         } 
         
