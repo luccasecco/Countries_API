@@ -4,14 +4,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  max-width: 90vw;
+  gap: 5rem;
+  max-width: 75rem;
   margin: 4rem auto;
-
-  .card-container {
-    display: flex;
-    flex-direction: row;
-  }
 `
 
 export const Content = styled.div`
@@ -20,7 +15,12 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
 
-  label {
+  .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    label {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -29,23 +29,35 @@ export const Content = styled.div`
     padding: 1rem;
     background: ${props => props.theme["header-dark"]};
 
-    svg {
-      color: ${props => props.theme.title}
+      svg {
+        color: ${props => props.theme.title}
+      }
+   }
+
+    input {
+      width: 100%;
+      color: ${props => props.theme.title};
+      background: transparent;
+      border: 0;
+  
+      &::placeholder {
+        color: ${props => props.theme.text};
+      }
+  
+      &:focus {
+        outline: 0;
+      }
     }
-  }
 
-  input {
-    width: 100%;
-    color: ${props => props.theme.title};
-    background: transparent;
-    border: 0;
-
-    &::placeholder {
+    select {
+      border: 0;
+      width: 15rem;
+      border-radius: 8px;
+      padding: 1rem;
       color: ${props => props.theme.text};
+      background: ${props => props.theme["header-dark"]};
     }
 
-    &:focus {
-      outline: 0;
-    }
   }
+
 `

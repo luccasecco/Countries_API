@@ -1,5 +1,4 @@
 export interface ICountriesProps {
-  id?: string;
   name: {
     common: string;
   },
