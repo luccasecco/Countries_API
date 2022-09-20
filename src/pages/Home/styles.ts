@@ -65,6 +65,7 @@ export const Content = styled.div`
       padding: 1rem;
       color: ${props => props.theme.colors.primary};
       background: ${props => props.theme.colors.secundary};
+      cursor: pointer;
 
       @media (max-width: 1000px) {
         display: none;
