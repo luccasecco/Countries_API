@@ -9,6 +9,9 @@ This is my solution to the challange Rest Countries by Frontend Mentor using Rea
 These instructions will allow you to get a working copy of the project on your local machine for development and testing purposes.
 
 ### Installation 🔧
+
+- Clone this project from this repository and run the following command to initialize the project whit all dependencies
+
 ```
 - npm install
 ```
