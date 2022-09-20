@@ -25,7 +25,7 @@ export function Country() {
   const { name } = useParams()
   const [country, setCountry] = useState<CountrySelectedProps[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string>("");
+  const [error, setError] = useState<unknown>("");
   const { countryName } = useParams();
 
   useEffect(() => {
@@ -41,6 +41,7 @@ export function Country() {
         setIsLoading(false);
       } catch (error) {
         setIsLoading(false);
+        setError(error)
       }
     };
 
@@ -55,24 +56,23 @@ export function Country() {
 
       <Content>
         {isLoading && !error && <Loading />}
-        {country ? country?.map(country => (
+        {country?.map(country => (
           <div className="content" key={country.name.common}>
             <img src={country.flags.svg} alt="" />
             <div className="text">
-              <h1>{country.name.common}</h1>
-              <p>Population: {new Intl.NumberFormat().format(country.population)}</p>
-              <p>Region: <span>{country.region}</span></p>
-              <p>Sub Region: <span>{country.subregion}</span></p>
-              <p>Capital: <span>{country.capital}</span></p>
+              <h1>{country.name.common ? country.name.common : 'not apply'}</h1>
+              <p>Population: {new Intl.NumberFormat().format(country.population ? country.population : 0)}</p>
+              <p>Region: <span>{country.region ? country.region : 'not apply'}</span></p>
+              <p>Sub Region: <span>{country.subregion ? country.subregion : 'not apply'}</span></p>
+              <p>Capital: <span>{country.capital ? country.capital : 'not apply'}</span></p>
               <div className="border-countries-box">
-                <p>Border Countries: {country.borders.map(border => (
+                <p>Border Countries: {country.borders ? country.borders.map(border => (
                   <span key={border}>{border}</span>
-                ))}</p>
+                )) : ''}</p>
               </div>
             </div>
-
           </div>
-        )) : <h1>Something go wrong...</h1>}
+        ))}
       </Content>
     </Container>
   )

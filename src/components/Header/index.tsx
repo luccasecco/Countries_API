@@ -21,6 +21,7 @@ export function Header({ toggleTheme }: Props) {
         </NavLink>
 
         <Switch
+          className="switch"
           onChange={toggleTheme}
           checked={title === 'dark'}
           checkedIcon={false}

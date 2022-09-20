@@ -90,9 +90,9 @@ export function Home() {
               key={country.name.common}
               flags={country.flags}
               name={country.name}
-              region={country.region}
-              capital={country.capital}
-              area={country.area}
+              region={country.region ? country.region : 'not apply'}
+              capital={country.capital ? country.capital : 'not apply'}
+              area={country.area ? country.area : 0}
               independent={country.independent}
             />
           )
@@ -102,9 +102,9 @@ export function Home() {
               key={item.name.common}
               flags={item.flags}
               name={item.name}
-              region={item.region}
-              capital={item.capital}
-              area={item.area}
+              region={item.region ? item.region : 'not apply'}
+              capital={item.capital ? item.capital : 'not apply'}
+              area={item.area ? item.area : 0}
               independent={item.independent}
             />
           )
@@ -114,9 +114,9 @@ export function Home() {
               key={countryByRegion.name.common}
               flags={countryByRegion.flags}
               name={countryByRegion.name}
-              region={countryByRegion.region}
-              capital={countryByRegion.capital}
-              area={countryByRegion.area}
+              region={countryByRegion.region ? countryByRegion.region : 'not apply'}
+              capital={countryByRegion.capital ? countryByRegion.capital : 'not apply'}
+              area={countryByRegion.area ? countryByRegion.area : 0}
               independent={countryByRegion.independent}
             />
           )
