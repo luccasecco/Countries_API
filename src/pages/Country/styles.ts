@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
+  width: 75rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
   .button-wrapper{
-    margin: 2rem 5rem 0;
+    margin: 2rem 0;
 
     a {
       text-decoration: none;
@@ -27,6 +29,14 @@ export const Container = styled.main`
         filter: brightness(1.1)
       }
     }
+    @media (max-width: 1000px) {
+      margin: 2rem auto;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    margin: 0;
+    width: 100%;
   }
 `
 
