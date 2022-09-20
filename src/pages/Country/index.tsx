@@ -68,7 +68,7 @@ export function Country() {
               <div className="border-countries-box">
                 <p>Border Countries: {country.borders ? country.borders.map(border => (
                   <span key={border}>{border}</span>
-                )) : ''}</p>
+                )) : 'not apply'}</p>
               </div>
             </div>
           </div>
