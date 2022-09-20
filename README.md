@@ -10,7 +10,7 @@ These instructions will allow you to get a working copy of the project on your l
 
 ### Installation 🔧
 
-- Clone this project from this repository and run the following command to initialize the project whit all dependencies
+- Clone the project from this repository and run the following command to initialize whit all dependencies
 
 ```
 - npm install
