@@ -55,7 +55,7 @@ export function Country() {
 
       <Content>
         {isLoading && !error && <Loading />}
-        {country?.map(country => (
+        {country ? country?.map(country => (
           <div className="content" key={country.name.common}>
             <img src={country.flags.svg} alt="" />
             <div className="text">
@@ -72,7 +72,7 @@ export function Country() {
             </div>
 
           </div>
-        ))}
+        )) : <h1>Something go wrong...</h1>}
       </Content>
     </Container>
   )
