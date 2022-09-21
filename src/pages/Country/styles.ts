@@ -1,4 +1,8 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { fadeInLeft } from 'react-animations';
+
+const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+
 
 export const Container = styled.main`
   width: 75rem;
@@ -8,7 +12,7 @@ export const Container = styled.main`
   gap: 1rem;
 
   .button-wrapper{
-    margin: 2rem 0;
+    margin: 2rem 0 0;
 
     a {
       text-decoration: none;
@@ -47,7 +51,8 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-around;
   margin: 2rem auto;
-
+  animation: 1s ${fadeInLeftAnimation};
+  
   .content {
     width: 100%;
     display: flex;
@@ -55,7 +60,7 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    margin: 5rem auto;
+    margin: 3rem auto;
 
 
     img {

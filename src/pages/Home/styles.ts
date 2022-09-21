@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -7,6 +7,7 @@ export const Container = styled.div`
   gap: 5rem;
   max-width: 75rem;
   margin: 4rem auto;
+
 
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -19,6 +20,7 @@ export const Content = styled.div`
   margin: 4rem auto;
   display: flex;
   flex-direction: column;
+ 
 
   .search-box {
     display: flex;

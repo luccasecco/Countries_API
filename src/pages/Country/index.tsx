@@ -54,8 +54,8 @@ export function Country() {
         <NavLink to="/"><ArrowArcLeft size={18} /> Back</NavLink>
       </div>
 
+      {isLoading && !error && <Loading />}
       <Content>
-        {isLoading && !error && <Loading />}
         {country?.map(country => (
           <div className="content" key={country.name.common}>
             <img src={country.flags.svg} alt="" />

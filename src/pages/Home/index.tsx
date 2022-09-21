@@ -44,7 +44,7 @@ export function Home() {
   function handleFilterCountriesByRegion(event: any) {
     event.preventDefault()
 
-    const result = countries.filter(item => item.region === event.target.value)
+    const result = countries.filter(item => item.region === event.target.value);
     setCountrySearchByRegion(result)
   }
 
@@ -82,8 +82,8 @@ export function Home() {
 
         </select>
       </div>
+      {isLoading && <Loading />}
       <Container>
-        {isLoading && <Loading />}
         {countrySearch.length === 0 && countrySearchByRegion.length === 0 ? countries.map((country) => {
           return (
             <Card

@@ -1,4 +1,7 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { fadeInUp } from 'react-animations';
+
+const fadeInUpAnimation = keyframes`${fadeInUp}`;
 
 
 export const CardContainer = styled.div`
@@ -8,6 +11,8 @@ export const CardContainer = styled.div`
   overflow: hidden;
   background: ${props => props.theme.colors.primary};
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+  animation: 1s ${fadeInUpAnimation};
+
     
     img {
       width: 100%;
