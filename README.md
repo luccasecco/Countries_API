@@ -24,6 +24,7 @@ These instructions will allow you to get a working copy of the project on your l
 - Axios;
 - Styled-components;
 - React-switch;
+- React-animations;
 
 ### Author
 
