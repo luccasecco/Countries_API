@@ -28,6 +28,21 @@ These instructions will allow you to get a working copy of the project on your l
 
 ### Author
 
-- Lucca Guedes Secco
+<table>
+  <tr>
+    <td align="center">
+      <a href="http://github.com/luccasecco/">
+        <img src="https://github.com/luccasecco.png" width="100px;" alt="Lucca Secco"/>
+        <br />
+        <sub>
+          <b>Lucca Secco</b>
+        </sub>
+       </a>
+       <br />
+       <a href="https://www.linkedin.com/in/luccaseccodev/" title="Linkedin">@luccasecco</a>
+       <br />
+    </td>
+   </tr>
+</table>
 
 
