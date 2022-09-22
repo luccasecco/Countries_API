@@ -1,30 +1,35 @@
 # Frontend Mentor 
 ### REST Countries API with color theme switcher
 
-## Welcome! 👋
+## 👋 Welcome! 
 
 This is my solution to the challange Rest Countries by Frontend Mentor using React with Typescript. 
 
-### Starting! 🚀
+<h4> 
+	🚧  Rest Countries: 🚀 Version 1.0 🚧
+</h4>
+
+### 🚀 Starting! 
 
 These instructions will allow you to get a working copy of the project on your local machine for development and testing purposes.
 
-### Installation 🔧
+
+### 🔧 Installation 
 
 - Clone the project from this repository and run the following command to initialize whit all dependencies
 
 ```
 - npm install
 ```
-### Techs and dependencies
+### :computer: Techs and dependencies
 
-- React;
-- Phosphor-react;
-- React-router-dom;
-- Axios;
-- Styled-components;
-- React-switch;
-- React-animations;
+- [React](https://pt-br.reactjs.org/docs/react-component.html)
+- [Phosphor Icons](https://phosphoricons.com/)
+- [React Router Dom](https://v5.reactrouter.com/web/guides/quick-start)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Styled Components](https://styled-components.com/)
+- [React-switch](https://www.npmjs.com/package/react-switch)
+- [React Animations](https://formidable.com/open-source/react-animations/#:~:text=A%20collection%20of%20animations%20that,css.)
 
 ### Author
 
