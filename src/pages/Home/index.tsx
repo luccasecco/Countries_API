@@ -36,8 +36,12 @@ export function Home() {
 
   function handleSearchCountryByName(event: any) {
     event.preventDefault()
+    const str = event.target.value
+    const firstLetter = str.slice(0, 1).toUpperCase()
+    const strRest = str.slice(1).toLowerCase()
+    const newStr = `${firstLetter}${strRest}`
 
-    const result = countries.filter(item => item.name?.common.includes(event.target.value))
+    const result = countries.filter(item => item.name?.common.includes(newStr))
     setCountrySearch(result)
   }
 
