@@ -21,7 +21,6 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
  
-
   .search-box {
     display: flex;
     align-items: center;

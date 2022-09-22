@@ -50,7 +50,7 @@ export const Content = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin: 2rem auto;
+  margin: 2rem;
   animation: 1s ${fadeInLeftAnimation};
   
   .content {
