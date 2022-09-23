@@ -68,6 +68,11 @@ export const Content = styled.div`
       background: ${props => props.theme.colors.secundary};
       cursor: pointer;
 
+      &:focus {
+        outline: none;
+        box-shadow: 0 2px 2px 2px ${props => props.theme.colors.primary};
+      }
+
       @media (max-width: 1000px) {
         display: none;
        }

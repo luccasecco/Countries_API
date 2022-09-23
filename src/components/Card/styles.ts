@@ -12,6 +12,7 @@ export const CardContainer = styled.div`
   background: ${props => props.theme.colors.primary};
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
   animation: 1s ${fadeInUpAnimation};
+  transition: transform 0.2s;
 
     
     img {
@@ -24,16 +25,16 @@ export const CardContainer = styled.div`
       text-align: center;
       margin-top: 1.5rem;
       font-size: 1.25rem;
-      color: ${props => props.theme.colors.text}
+      color: ${props => props.theme.colors.text};
     }
 
     a {
       text-decoration: none;
-      transition: filter 0.2s;
+      /* transition: filter 0.2s;
 
       &:hover {
-        filter: brightness(1.3)
-      }
+        filter: brightness(0.9);
+      } */
     }
 
     .card-content{
@@ -51,6 +52,10 @@ export const CardContainer = styled.div`
         gap: 0.45rem;
         color: ${props => props.theme.colors.text}
       }
+    }
+
+    &:hover {
+      transform: scale(1.1)
     }
   
 `
