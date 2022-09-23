@@ -30,11 +30,6 @@ export const CardContainer = styled.div`
 
     a {
       text-decoration: none;
-      /* transition: filter 0.2s;
-
-      &:hover {
-        filter: brightness(0.9);
-      } */
     }
 
     .card-content{
